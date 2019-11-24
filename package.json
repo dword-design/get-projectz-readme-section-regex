@@ -1,0 +1,19 @@
+{
+  "name": "@dword-design/get-projectz-readme-section-regex",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "repository": "dword-design/get-projectz-readme-section-regex",
+  "author": "Sebastian Landwehr <sebastianlandw@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "base-node prepare",
+    "start": "base-node start",
+    "test": "base-node test"
+  },
+  "devDependencies": {
+    "@dword-design/base-node": "^1.0.0"
+  }
+}
