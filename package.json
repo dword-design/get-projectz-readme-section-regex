@@ -1,6 +1,6 @@
 {
   "name": "get-projectz-readme-section-regex",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Returns a regex for Projectz readme sections depending on the section name.",
   "main": "dist/index.js",
   "files": [
@@ -28,7 +28,8 @@
   },
   "maintainers": [],
   "contributors": [
-    "dword-design (http://www.dword-design.de)"
+    "dword-design (http://www.dword-design.de)",
+    "Renovate Bot (http://renovatebot.com)"
   ],
   "bugs": {
     "url": "https://github.com/dword-design/get-projectz-readme-section-regex/issues"
