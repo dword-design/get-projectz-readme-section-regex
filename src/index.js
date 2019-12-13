@@ -1,4 +1,4 @@
-import { join } from '@functions'
+import { join } from '@dword-design/functions'
 
 export default regexName => new RegExp(
   [
