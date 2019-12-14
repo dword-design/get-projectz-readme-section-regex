@@ -16,22 +16,25 @@
   "repository": "dword-design/get-projectz-readme-section-regex",
   "license": "MIT",
   "author": "Sebastian Landwehr <sebastianlandw@gmail.com>",
-  "contributors": [
-    "dword-design (http://www.dword-design.de)",
-    "Renovate Bot (http://renovatebot.com)"
-  ],
   "files": [
     "dist"
   ],
   "main": "dist/index.js",
   "scripts": {
-    "prepublishOnly": "base-node build",
-    "start": "base-node start",
-    "test": "base-node test"
+    "prepublishOnly": "base build",
+    "start": "base start",
+    "test": "base test"
+  },
+  "dependencies": {
+    "@dword-design/functions": "^2.2.2"
   },
   "devDependencies": {
-    "@dword-design/base-node": "^1.0.0",
+    "@dword-design/base": "^3.4.4",
     "expect": "^24.9.0"
   },
+  "contributors": [
+    "dword-design (http://www.dword-design.de)",
+    "Renovate Bot (http://renovatebot.com)"
+  ],
   "maintainers": []
 }
