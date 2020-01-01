@@ -30,7 +30,8 @@ Returns a regex for Projectz readme sections depending on the section name.
 <a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>npm</h3></a>
 <ul>
 <li>Install: <code>npm install --save get-projectz-readme-section-regex</code></li>
-<li>Require: <code>require('get-projectz-readme-section-regex')</code></li>
+<li>Import: <code>import * as pkg from ('get-projectz-readme-section-regex')</code></li>
+<li>Require: <code>const pkg = require('get-projectz-readme-section-regex')</code></li>
 </ul>
 
 <!-- /INSTALL -->
