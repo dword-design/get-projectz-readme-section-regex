@@ -10,5 +10,5 @@ export default regexName => new RegExp(
     `<!--\\s*/${regexName}\\s*-->`,
     ')\\s+',
   ] |> join(''),
-  'gim'
+  'gim',
 )
