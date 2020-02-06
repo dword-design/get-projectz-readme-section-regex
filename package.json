@@ -1,6 +1,6 @@
 {
   "name": "get-projectz-readme-section-regex",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Returns a regex for Projectz readme sections depending on the section name.",
   "keywords": [
     "function",
