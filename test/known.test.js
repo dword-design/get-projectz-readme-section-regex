@@ -6,11 +6,11 @@ export default () => {
     foo
     <!-- BADGES -->
     bar
-  ` + '\n')).toBeTruthy()
+  `)).toBeTruthy()
   expect(getProjectzReadmeSectionRegex('BADGES').test(endent`
     foo
     <!-- BADGES/ -->
     bar
     <!-- /BADGES -->
-  ` + '\n')).toBeTruthy()
+  `)).toBeTruthy()
 }
