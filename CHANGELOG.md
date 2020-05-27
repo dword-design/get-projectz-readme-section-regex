@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v2.0.1...v2.0.2) (2020-05-27)
+
+
+### Bug Fixes
+
+* fix line breaks ([2b44bbd](https://github.com/dword-design/get-projectz-readme-section-regex/commit/2b44bbd855240e814d1ae183dbec3431d6fd4fde))
+
 ## [2.0.1](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v2.0.0...v2.0.1) (2020-05-27)
 
 
