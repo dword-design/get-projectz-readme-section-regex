@@ -2,18 +2,24 @@ import getProjectzReadmeSectionRegex from '.'
 import { endent } from '@dword-design/functions'
 
 export default {
-  known: () => {
-    expect(getProjectzReadmeSectionRegex('BADGES').test(endent`
+  closed: () => {
+    const content = endent`
       foo
       <!-- BADGES -->
       bar
-    `)).toBeTruthy()
-    expect(getProjectzReadmeSectionRegex('BADGES').test(endent`
+    `
+    expect(getProjectzReadmeSectionRegex('BADGES').test(content)).toBeTruthy()
+    expect(content.match(getProjectzReadmeSectionRegex('BADGES'))[1]).toBeUndefined()
+  },
+  open: () => {
+    const content = endent`
       foo
       <!-- BADGES/ -->
       bar
       <!-- /BADGES -->
-    `)).toBeTruthy()
+    `
+    expect(getProjectzReadmeSectionRegex('BADGES').test(content)).toBeTruthy()
+    expect(content.match(getProjectzReadmeSectionRegex('BADGES'))[1]).toEqual('bar')
   },
   unknown: () => {
     expect(getProjectzReadmeSectionRegex('BADGES').test(endent`
