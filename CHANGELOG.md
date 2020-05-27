@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v2.0.0...v2.0.1) (2020-05-27)
+
+
+### Bug Fixes
+
+* do not allow indented tags ([cf0d49a](https://github.com/dword-design/get-projectz-readme-section-regex/commit/cf0d49a76c1a7189f91760b957149fb342d1adc7))
+
 # [2.0.0](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v1.0.9...v2.0.0) (2020-05-27)
 
 
