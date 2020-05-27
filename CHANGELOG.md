@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v2.0.2...v2.0.3) (2020-05-27)
+
+
+### Bug Fixes
+
+* browser compatibility ([463e530](https://github.com/dword-design/get-projectz-readme-section-regex/commit/463e530ca989dc3996d849f75a4a776778a787d5))
+
 ## [2.0.2](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v2.0.1...v2.0.2) (2020-05-27)
 
 
