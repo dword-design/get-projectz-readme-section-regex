@@ -20,7 +20,6 @@ export default {
       bar
       <!-- /BADGES -->
     `
-    expect(getProjectzReadmeSectionRegex('BADGES').test(content)).toBeTruthy()
     expect(content.match(getProjectzReadmeSectionRegex('BADGES'))[1]).toEqual(
       'bar'
     )
@@ -33,7 +32,6 @@ export default {
 
       <!-- BADGES ->
     `
-    expect(getProjectzReadmeSectionRegex('BADGES').test(content)).toBeTruthy()
     expect(content.match(getProjectzReadmeSectionRegex('BADGES'))[1]).toEqual(
       'bar'
     )
@@ -53,6 +51,19 @@ export default {
         <!-- /BADGES -->
     `
     expect(getProjectzReadmeSectionRegex('BADGES').test(content)).toBeFalsy()
+  },
+  multiline: () => {
+    const content = endent`
+      <!-- BADGES/ -->
+      foo
+      bar
+      <!-- /BADGES -->
+    `
+    expect(content.match(getProjectzReadmeSectionRegex('BADGES'))[1])
+      .toEqual(endent`
+      foo
+      bar
+    `)
   },
   unknown: () => {
     expect(
