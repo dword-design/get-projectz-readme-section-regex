@@ -25,6 +25,35 @@ export default {
       'bar'
     )
   },
+  'open and closed': () => {
+    const content = endent`
+      <!-- BADGES/ -->
+      bar
+      <!-- /BADGES -->
+
+      <!-- BADGES ->
+    `
+    expect(getProjectzReadmeSectionRegex('BADGES').test(content)).toBeTruthy()
+    expect(content.match(getProjectzReadmeSectionRegex('BADGES'))[1]).toEqual(
+      'bar'
+    )
+  },
+  'indented closed': () => {
+    const content = endent`
+      foo
+        <!-- BADGES -->
+    `
+    expect(getProjectzReadmeSectionRegex('BADGES').test(content)).toBeFalsy()
+  },
+  'indented open': () => {
+    const content = endent`
+      foo
+        <!-- BADGES/ -->
+        bar
+        <!-- /BADGES -->
+    `
+    expect(getProjectzReadmeSectionRegex('BADGES').test(content)).toBeFalsy()
+  },
   unknown: () => {
     expect(
       getProjectzReadmeSectionRegex('BADGES').test(endent`
