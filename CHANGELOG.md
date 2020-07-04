@@ -1,3 +1,10 @@
+## [2.0.4](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v2.0.3...v2.0.4) (2020-07-04)
+
+
+### Bug Fixes
+
+* build files ([bf59b5e](https://github.com/dword-design/get-projectz-readme-section-regex/commit/bf59b5e1c2c1c840dd2efe5cc74bdb6d26305757))
+
 ## [2.0.3](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v2.0.2...v2.0.3) (2020-05-27)
 
 
