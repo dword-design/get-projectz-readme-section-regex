@@ -1,4 +1,5 @@
 import { endent } from '@dword-design/functions'
+
 import getProjectzReadmeSectionRegex from '.'
 
 export default {
@@ -12,29 +13,6 @@ export default {
     expect(
       content.match(getProjectzReadmeSectionRegex('BADGES'))[1]
     ).toBeUndefined()
-  },
-  open: () => {
-    const content = endent`
-      foo
-      <!-- BADGES/ -->
-      bar
-      <!-- /BADGES -->
-    `
-    expect(content.match(getProjectzReadmeSectionRegex('BADGES'))[1]).toEqual(
-      'bar'
-    )
-  },
-  'open and closed': () => {
-    const content = endent`
-      <!-- BADGES/ -->
-      bar
-      <!-- /BADGES -->
-
-      <!-- BADGES ->
-    `
-    expect(content.match(getProjectzReadmeSectionRegex('BADGES'))[1]).toEqual(
-      'bar'
-    )
   },
   'indented closed': () => {
     const content = endent`
@@ -64,6 +42,29 @@ export default {
       foo
       bar
     `)
+  },
+  open: () => {
+    const content = endent`
+      foo
+      <!-- BADGES/ -->
+      bar
+      <!-- /BADGES -->
+    `
+    expect(content.match(getProjectzReadmeSectionRegex('BADGES'))[1]).toEqual(
+      'bar'
+    )
+  },
+  'open and closed': () => {
+    const content = endent`
+      <!-- BADGES/ -->
+      bar
+      <!-- /BADGES -->
+
+      <!-- BADGES ->
+    `
+    expect(content.match(getProjectzReadmeSectionRegex('BADGES'))[1]).toEqual(
+      'bar'
+    )
   },
   unknown: () => {
     expect(
