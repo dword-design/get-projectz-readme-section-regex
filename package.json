@@ -11,6 +11,7 @@
     "section"
   ],
   "repository": "dword-design/get-projectz-readme-section-regex",
+  "funding": "https://www.buymeacoffee.com/dword",
   "license": "MIT",
   "author": "Sebastian Landwehr <info@dword-design.de>",
   "main": "dist/index.js",
