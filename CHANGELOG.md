@@ -1,3 +1,10 @@
+## [2.0.12](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v2.0.11...v2.0.12) (2021-04-20)
+
+
+### Bug Fixes
+
+* updated package.json[keywords] ([#31](https://github.com/dword-design/get-projectz-readme-section-regex/issues/31)) ([cbf024f](https://github.com/dword-design/get-projectz-readme-section-regex/commit/cbf024f9187218774c80bb3cc43415e8396a78a8))
+
 ## [2.0.11](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v2.0.10...v2.0.11) (2021-04-12)
 
 
