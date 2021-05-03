@@ -1,3 +1,19 @@
+# [3.0.0](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v2.0.12...v3.0.0) (2021-05-03)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/base to v8 ([#34](https://github.com/dword-design/get-projectz-readme-section-regex/issues/34)) ([14cb559](https://github.com/dword-design/get-projectz-readme-section-regex/commit/14cb55956aa6b80bbd4306186c4c53ffe4de3c35))
+
+
+### BREAKING CHANGES
+
+* require Node.js >= 12
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Sebastian Landwehr <info@dword-design.de>
+Co-authored-by: GitHub Actions <actions@github.com>
+
 ## [2.0.12](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v2.0.11...v2.0.12) (2021-04-20)
 
 
