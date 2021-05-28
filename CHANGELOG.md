@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v3.0.1...v3.0.2) (2021-05-28)
+
+
+### Bug Fixes
+
+* update config files ([002c1bf](https://github.com/dword-design/get-projectz-readme-section-regex/commit/002c1bfb93489e6920f6215aca3cf71d1f9456b0))
+
 ## [3.0.1](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v3.0.0...v3.0.1) (2021-05-03)
 
 
