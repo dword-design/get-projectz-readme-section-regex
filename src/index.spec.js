@@ -1,6 +1,6 @@
 import { endent } from '@dword-design/functions'
 
-import getProjectzReadmeSectionRegex from '.'
+import self from './index.js'
 
 export default {
   closed: () => {
@@ -9,17 +9,15 @@ export default {
       <!-- BADGES -->
       bar
     `
-    expect(getProjectzReadmeSectionRegex('BADGES').test(content)).toBeTruthy()
-    expect(
-      content.match(getProjectzReadmeSectionRegex('BADGES'))[1]
-    ).toBeUndefined()
+    expect(self('BADGES').test(content)).toBeTruthy()
+    expect(content.match(self('BADGES'))[1]).toBeUndefined()
   },
   'indented closed': () => {
     const content = endent`
       foo
         <!-- BADGES -->
     `
-    expect(getProjectzReadmeSectionRegex('BADGES').test(content)).toBeFalsy()
+    expect(self('BADGES').test(content)).toBeFalsy()
   },
   'indented open': () => {
     const content = endent`
@@ -28,7 +26,7 @@ export default {
         bar
         <!-- /BADGES -->
     `
-    expect(getProjectzReadmeSectionRegex('BADGES').test(content)).toBeFalsy()
+    expect(self('BADGES').test(content)).toBeFalsy()
   },
   multiline: () => {
     const content = endent`
@@ -37,8 +35,7 @@ export default {
       bar
       <!-- /BADGES -->
     `
-    expect(content.match(getProjectzReadmeSectionRegex('BADGES'))[1])
-      .toEqual(endent`
+    expect(content.match(self('BADGES'))[1]).toEqual(endent`
       foo
       bar
     `)
@@ -50,9 +47,7 @@ export default {
       bar
       <!-- /BADGES -->
     `
-    expect(content.match(getProjectzReadmeSectionRegex('BADGES'))[1]).toEqual(
-      'bar'
-    )
+    expect(content.match(self('BADGES'))[1]).toEqual('bar')
   },
   'open and closed': () => {
     const content = endent`
@@ -62,20 +57,18 @@ export default {
 
       <!-- BADGES ->
     `
-    expect(content.match(getProjectzReadmeSectionRegex('BADGES'))[1]).toEqual(
-      'bar'
-    )
+    expect(content.match(self('BADGES'))[1]).toEqual('bar')
   },
   unknown: () => {
     expect(
-      getProjectzReadmeSectionRegex('BADGES').test(endent`
+      self('BADGES').test(endent`
       foo
       <!-- FOO -->
       bar
     `)
     ).toBeFalsy()
     expect(
-      getProjectzReadmeSectionRegex('BADGES').test(endent`
+      self('BADGES').test(endent`
       foo
       <!-- FOO/ -->
       bar
