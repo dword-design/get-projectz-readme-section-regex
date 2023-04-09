@@ -1,3 +1,10 @@
+## [3.0.10](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v3.0.9...v3.0.10) (2023-04-09)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/functions to v4.1.7 ([91b1968](https://github.com/dword-design/get-projectz-readme-section-regex/commit/91b196840938f0183f41195c990adc7d94384536))
+
 ## [3.0.9](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v3.0.8...v3.0.9) (2023-04-09)
 
 
