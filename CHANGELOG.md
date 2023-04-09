@@ -1,3 +1,10 @@
+## [3.0.9](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v3.0.8...v3.0.9) (2023-04-09)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#93](https://github.com/dword-design/get-projectz-readme-section-regex/issues/93)) ([dbf4b0f](https://github.com/dword-design/get-projectz-readme-section-regex/commit/dbf4b0f0f73d272f1faed52921cc888acaaa9018))
+
 ## [3.0.8](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v3.0.7...v3.0.8) (2023-02-15)
 
 
