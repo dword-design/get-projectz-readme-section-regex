@@ -1,3 +1,16 @@
+# [4.0.0](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v3.0.10...v4.0.0) (2025-07-21)
+
+
+### Bug Fixes
+
+* foo ([a163cf4](https://github.com/dword-design/get-projectz-readme-section-regex/commit/a163cf4342acc585d35f05d2bba6155966ccfa3b))
+* lock file maintenance ([#98](https://github.com/dword-design/get-projectz-readme-section-regex/issues/98)) ([b7ada43](https://github.com/dword-design/get-projectz-readme-section-regex/commit/b7ada43aad1a8501d126e949a7af6e6e22b78412))
+
+
+### BREAKING CHANGES
+
+* node.js >= 20
+
 ## [3.0.10](https://github.com/dword-design/get-projectz-readme-section-regex/compare/v3.0.9...v3.0.10) (2023-04-09)
 
 
