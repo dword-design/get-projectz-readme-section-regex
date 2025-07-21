@@ -1,24 +1,26 @@
+import { expect, test } from '@playwright/test';
 import endent from 'endent';
-import { test, expect } from '@playwright/test';
 
-import self from '.'
+import self from '.';
 
 test('closed', () => {
   const content = endent`
     foo
     <!-- BADGES -->
     bar
-  `
-  expect(self('BADGES').test(content)).toBeTruthy()
-  expect(content.match(self('BADGES'))[1]).toBeUndefined()
+  `;
+
+  expect(self('BADGES').test(content)).toBeTruthy();
+  expect(content.match(self('BADGES'))[1]).toBeUndefined();
 });
 
 test('indented closed', () => {
   const content = endent`
     foo
       <!-- BADGES -->
-  `
-  expect(self('BADGES').test(content)).toBeFalsy()
+  `;
+
+  expect(self('BADGES').test(content)).toBeFalsy();
 });
 
 test('indented open', () => {
@@ -27,8 +29,9 @@ test('indented open', () => {
       <!-- BADGES/ -->
       bar
       <!-- /BADGES -->
-  `
-  expect(self('BADGES').test(content)).toBeFalsy()
+  `;
+
+  expect(self('BADGES').test(content)).toBeFalsy();
 });
 
 test('multiline', () => {
@@ -37,11 +40,12 @@ test('multiline', () => {
     foo
     bar
     <!-- /BADGES -->
-  `
+  `;
+
   expect(content.match(self('BADGES'))[1]).toEqual(endent`
     foo
     bar
-  `)
+  `);
 });
 
 test('open', () => {
@@ -50,8 +54,9 @@ test('open', () => {
     <!-- BADGES/ -->
     bar
     <!-- /BADGES -->
-  `
-  expect(content.match(self('BADGES'))[1]).toEqual('bar')
+  `;
+
+  expect(content.match(self('BADGES'))[1]).toEqual('bar');
 });
 
 test('open and closed', () => {
@@ -61,8 +66,9 @@ test('open and closed', () => {
     <!-- /BADGES -->
 
     <!-- BADGES ->
-  `
-  expect(content.match(self('BADGES'))[1]).toEqual('bar')
+  `;
+
+  expect(content.match(self('BADGES'))[1]).toEqual('bar');
 });
 
 test('unknown', () => {
@@ -72,7 +78,8 @@ test('unknown', () => {
       <!-- FOO -->
       bar
     `),
-  ).toBeFalsy()
+  ).toBeFalsy();
+
   expect(
     self('BADGES').test(endent`
       foo
@@ -80,5 +87,5 @@ test('unknown', () => {
       bar
       <!-- /FOO -->
     `),
-  ).toBeFalsy()
+  ).toBeFalsy();
 });

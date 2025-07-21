@@ -14,6 +14,9 @@ importers:
       '@playwright/test':
         specifier: ^1.54.1
         version: 1.54.1
+      endent:
+        specifier: npm:@dword-design/endent@^1.4.7
+        version: '@dword-design/endent@1.4.7'
 
 packages:
 
