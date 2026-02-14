@@ -1,4 +1,4 @@
-export default regexName =>
+export default (regexName: string) =>
   new RegExp(
     [
       `^<!--\\s*${regexName}\\s*-->`,

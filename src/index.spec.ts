@@ -11,7 +11,7 @@ test('closed', () => {
   `;
 
   expect(self('BADGES').test(content)).toBeTruthy();
-  expect(content.match(self('BADGES'))[1]).toBeUndefined();
+  expect(content.match(self('BADGES'))?.[1]).toBeUndefined();
 });
 
 test('indented closed', () => {
@@ -42,7 +42,7 @@ test('multiline', () => {
     <!-- /BADGES -->
   `;
 
-  expect(content.match(self('BADGES'))[1]).toEqual(endent`
+  expect(content.match(self('BADGES'))?.[1]).toEqual(endent`
     foo
     bar
   `);
@@ -56,7 +56,7 @@ test('open', () => {
     <!-- /BADGES -->
   `;
 
-  expect(content.match(self('BADGES'))[1]).toEqual('bar');
+  expect(content.match(self('BADGES'))?.[1]).toEqual('bar');
 });
 
 test('open and closed', () => {
@@ -68,7 +68,7 @@ test('open and closed', () => {
     <!-- BADGES ->
   `;
 
-  expect(content.match(self('BADGES'))[1]).toEqual('bar');
+  expect(content.match(self('BADGES'))?.[1]).toEqual('bar');
 });
 
 test('unknown', () => {
